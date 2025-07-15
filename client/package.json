@@ -1,0 +1,27 @@
+{
+  "name": "mern-testing-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration",
+    "test:e2e": "cypress run"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/user-event": "^14.0.0",
+    "babel-jest": "^29.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "cypress": "^13.0.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>/src/tests/setup.js"]
+  }
+} 
